@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eka.koperasisimpanpinjam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KoperasiSimpanPinjam"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.TambahAngsuran"></activity>
+        <activity android:name=".activity.PembayaranActivity" />
+        <activity android:name=".activity.DetailAngsuranActivity" />
+        <activity android:name=".activity.DetailPinjamanActivity" />
+        <activity android:name=".activity.DetailSimpananActivity" />
+        <activity android:name=".activity.MenuUtamaActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

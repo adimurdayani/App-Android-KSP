@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">KSP</string>
+    <string name="content_login">Masuk dengan menggunakan username dan password, jika anda telah memiliki akun koperasi simpan pinjam.</string>
+    <string name="login">Login</string>
+    <string name="login2">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="lupa_password">Lupa Password?</string>
+    <string name="anda_belum_memiliki_akun">Anda belum memiliki akun?</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="register">REGISTER</string>
+    <string name="content_login2">Registrasi akun ini dapat digunakan untuk login pada sistem aplikasi koperasi</string>
+    <string name="nama">Nama</string>
+    <string name="konf_pass">Konfirmasi Password</string>
+    <string name="email">Email</string>
+    <string name="password_lama">Password lama</string>
+    <string name="password_baru">Password baru</string>
+    <string name="content_lupa_password">Input password lama yang anda ketahui, kemudian imput password baru agar anda bisa mengakses aplikasi.</string>
+    <string name="lupa_password_besar">LUPA PASSWORD</string>
+    <string name="ubah_password">Ubah Password</string>
+    <string name="nik">NIK</string>
+    <string name="no_hp">No. Telp</string>
+    <string name="alamat">Alamat</string>
+    <string name="tlahir">Tempat Lahir</string>
+    <string name="pekerjaan">Pekerjaan</string>
+    <string name="simpan">Simpan</string>
+    <string name="cancelled">Keluar</string>
+    <string-array name="jenis_simpanan">
+        <item>Pokok</item>
+        <item>Kurban</item>
+    </string-array>
+    <string-array name="gol_darah">
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="kelamin">
+        <item>Perempuan</item>
+        <item>Laki-Laki</item>
+    </string-array>
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Hindu</item>
+        <item>Buda</item>
+        <item>Kristen</item>
+    </string-array>
+
+    <string-array name="tenor">
+        <item>6</item>
+        <item>12</item>
+        <item>18</item>
+        <item>24</item>
+        <item>36</item>
+        <item>48</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/pinjam"
+        android:icon="@drawable/ic_clipboard"
+        android:title="Pinjam"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/angsuran"
+        android:icon="@drawable/ic_dollar_sign"
+        android:title="Angsuran"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/simpanan"
+        android:icon="@drawable/ic_credit_card"
+        android:title="Simpanan"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/lainnya"
+        android:icon="@drawable/ic_monitor"
+        android:title="Lainnya"
+        app:showAsAction="never" />
+</menu>
