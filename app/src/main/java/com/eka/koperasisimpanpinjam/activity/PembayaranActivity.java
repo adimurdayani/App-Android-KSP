@@ -30,7 +30,7 @@ public class PembayaranActivity extends AppCompatActivity {
 
     private ImageView btn_kembali;
     private TextView txt_id, txt_tanggal, txt_jumlah_angsuran,
-            txt_no_hp, txt_no_member, txt_angsuran_ke;
+            txt_no_hp, txt_no_member, txt_angsuran_ke, nama;
     private SharedPreferences preferences;
     private StringRequest getAngsuranId, getTotal;
     int member;
@@ -52,11 +52,13 @@ public class PembayaranActivity extends AppCompatActivity {
         txt_no_hp = findViewById(R.id.no_hp);
         txt_no_member = findViewById(R.id.no_member);
         txt_angsuran_ke = findViewById(R.id.angsuran_ke);
+        nama = findViewById(R.id.nama);
 
         id = getIntent().getStringExtra("id");
         txt_no_hp.setText(preferences.getString("no_hp", ""));
         txt_no_member.setText(preferences.getString("member_id", ""));
         member = preferences.getInt("id_m", 0);
+        nama.setText(preferences.getString("nama", ""));
 
         btn_kembali.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,16 +90,7 @@ public class PembayaranActivity extends AppCompatActivity {
         }, error -> {
             error.printStackTrace();
             Toast.makeText(this, "Error: " + error.getMessage(), Toast.LENGTH_LONG).show();
-        }) {
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                String token = preferences.getString("token", "");
-                HashMap<String, String> map = new HashMap<>();
-                map.put("Authorization", "Bearer " + token);
-                return map;
-            }
-
-        };
+        });
         RequestQueue koneksi = Volley.newRequestQueue(this);
         koneksi.add(getAngsuranId);
     }
@@ -126,15 +119,7 @@ public class PembayaranActivity extends AppCompatActivity {
         }, error -> {
             error.printStackTrace();
             Toast.makeText(this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
-        }) {
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                String token = preferences.getString("token", "");
-                HashMap<String, String> map = new HashMap<>();
-                map.put("Authorization", "Bearer " + token);
-                return map;
-            }
-        };
+        });
         RequestQueue koneksi = Volley.newRequestQueue(this);
         koneksi.add(getTotal);
     }

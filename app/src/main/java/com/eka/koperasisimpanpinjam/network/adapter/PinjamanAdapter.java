@@ -56,6 +56,7 @@ public class PinjamanAdapter extends RecyclerView.Adapter<PinjamanAdapter.Holder
         int tenor = pinjaman.getTenor();
         int color_text = context.getColor(R.color.belum_lunas_teks);
         int color_div = context.getColor(R.color.belum_lunas);
+
         if (tenor == 0) {
             color_div = context.getColor(R.color.lunas);
             color_text = context.getColor(R.color.lunas_teks);
@@ -63,6 +64,7 @@ public class PinjamanAdapter extends RecyclerView.Adapter<PinjamanAdapter.Holder
         } else {
             holder.txt_jumlahpinjaman.setText(format);
         }
+
         holder.txt_jumlahpinjaman.setTextColor(color_text);
         holder.teks_pinjaman.setTextColor(color_text);
         holder.div_status.setBackgroundColor(color_div);

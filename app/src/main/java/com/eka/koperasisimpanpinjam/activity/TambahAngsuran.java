@@ -186,6 +186,7 @@ public class TambahAngsuran extends AppCompatActivity {
                 .setConfirmClickListener(sweetAlertDialog -> {
                     Intent i = new Intent(getApplication(), PembayaranActivity.class);
                     i.putExtra("id", id_pinjam);
+                    i.putExtra("id_m", m_id);
                     Log.d("Response", "ID: " + id_pinjam);
                     startActivity(i);
                     finish();

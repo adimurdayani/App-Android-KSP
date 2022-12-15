@@ -192,7 +192,7 @@ public class PinjamFragment extends Fragment {
                             if (!data.getString("tenor").equals("null")) {
                                 int jml_tenor = Integer.parseInt(data.getString("tenor"));
                                 String format = formatRupiah(Double.parseDouble(data.getString("jumlah")));
-                                if (jml_tenor == 0) {
+                                if (jml_tenor <= 0) {
                                     btn_tambah_pinjaman.setVisibility(View.GONE);
                                     txt_totalpinjaman.setText(formatRupiah(Double.parseDouble("0")));
                                 } else {

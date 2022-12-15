@@ -1,7 +1,6 @@
 package com.eka.koperasisimpanpinjam.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -20,7 +19,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.eka.koperasisimpanpinjam.R;
-import com.eka.koperasisimpanpinjam.fragment.TambahAngsuranFragment;
 import com.eka.koperasisimpanpinjam.network.api.URLServer;
 
 import org.json.JSONException;

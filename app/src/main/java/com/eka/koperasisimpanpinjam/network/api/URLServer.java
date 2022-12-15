@@ -1,7 +1,7 @@
 package com.eka.koperasisimpanpinjam.network.api;
 
 public class URLServer {
-    public static final String BASE_URL = "http://koperasi-ksp.my.id/api/";
+    public static final String BASE_URL = "https://koperasi-ksp.my.id/api/";
     public static final String LOGIN = BASE_URL + "auth/login";
     public static final String LOGOUT = BASE_URL + "auth/logout";
     public static final String REGISTER = BASE_URL + "auth/register";
@@ -18,7 +18,6 @@ public class URLServer {
     public static final String POSTPINJAMAN = BASE_URL + "pinjaman/pinjaman";
     public static final String GETTOTALPINJAMAN = BASE_URL + "pinjaman/totaldata?user_id=";
     public static final String GETANGSURAN = BASE_URL + "angsuran/angsuran?member=";
-    public static final String GETANGSURANID = BASE_URL + "angsuran/angsuran?id_a=";
     public static final String POSTANGSURAN = BASE_URL + "angsuran/angsuran";
     public static final String GETTOTALANGSURAN = BASE_URL + "angsuran/totaldata?member=";
     public static final String GETTOTALSIMPANAN = BASE_URL + "simpanan/totaldata?m_id=";
